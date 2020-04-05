@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="sum" method="POST"><!--submits the for to thr add url(/add)-->
+        <br><br><br>
+        <!-- token collects  imputs using the POST methode -->
+     {% csrf_token %}  
+       First Value: <input type="text" name="num1" ><br><br>
+       Second Value: <input type="text" name="num2" ><br><br>
+       <input type="submit" value = "compute">
+    </form>
+</body>
+</html>
